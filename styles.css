@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* Implementasi typography
+  Penggunaan font-family untuk menggunakan style font  */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  color: #273AB3;
+}
+
+h1{
+  font-size: calc(0.8rem + 0.8vw); /* Penggunaan Responsive Unit untuk Font-Size | Ukuran dihitung dari penjumlahan lebar viewport + 0.8 * ukuran font default root*/
+}
+h2{
+  font-size: calc(0.8rem + 0.6vw); /* Penggunaan Responsive Unit untuk Font-Size | Ukuran dihitung dari penjumlahan lebar viewport + 0.8 * ukuran font default root*/
+}
+h3{
+  font-size: calc(0.8rem + 0.4vw); /* Penggunaan Responsive Unit untuk Font-Size | Ukuran dihitung dari penjumlahan lebar viewport + 0.8 * ukuran font default root*/
+}
+h4{
+  font-size: calc(0.8rem + 0.2vw); /* Penggunaan Responsive Unit untuk Font-Size | Ukuran dihitung dari penjumlahan lebar viewport + 0.8 * ukuran font default root*/
+}
+p{
+  font-size: calc(0.2vw + 0.8rem); /* Penggunaan Responsive Unit untuk Font-Size | Ukuran dihitung dari penjumlahan lebar viewport + 0.8 * ukuran font default root*/
+}
+body{
+  background-color: #6684B7;
+}
+.container{
+  /* Implementasi Penggunaan Grid */
+  display: grid;
+  /* Grid dibagi menjadi 7 Baris dan 3 kolom */
+  grid-template-areas: 
+  'header header header'
+  'nav nav nav'
+  'main edu edu'
+  'main cer cer'
+  'main proj proj'
+  'tools tools tools'
+  'contact contact contact';
+  justify-items: center;
+  align-items: center;
+  width: 94%;
+  justify-self: center;
+  margin-top: 20px;
+  border-radius: 24px;
+  padding: 8px;
+  background-color: #FDFCEE;
+  margin-bottom: 20px;
+}
+div {
+  margin-top: 1rem;
+}
+
+.container h2{
+  text-align: center;
+}
+
+nav{
+  position: sticky;
+  max-height: 60px;
+  top: 10px;
+  overflow: hidden;
+  z-index: 999;
+  justify-self: center;
+  /* Pemberian area grid, nav akan mengambil area grid bernama nav */
+  /* Div ini akan menggunakan row 2 kolom 1, 2 dan 3. */
+  grid-area: nav;
+  width: 100%;
+  background-color: #D7D3A4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+a, a:active, a::after{
+text-decoration: none;
+color: black;
+transition: transform 0.3s ease;
+padding: 0.5%;
+border-radius: 10px;
+}
+
+.lime{
+  visibility: hidden;
+}
+
+.aboutme{
+  /* Pemberian area grid, class aboutme akan mengambil area grid bernama main */
+  /* Div ini akan menggunakan row 3 kolom 1, row 4 kolom 1, dan row 5 kolom 1 */
+  grid-area: main;
+  /* Lebar div menggunakan unit responsive rem, ukuran lebar akan dihitung 15 dari ukuran default root */
+  width: 17rem;
+  height: 100%;
+  justify-items: center;
+  text-align: center;
+  margin-top: 5px;
+  border-right: 1px dotted black;
+  z-index: 1000;
+  background-color: #D7D3A4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.aboutme p{
+  width: 100%;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.aboutme img{
+  border-radius: 90%;
+  animation-name:off;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+  size: 100%; /* Penggunaan Unit % untuk membuat responive Image */
+}
+
+.aboutme img:hover{
+  animation-name: aboutmeimg;
+  animation-fill-mode: both;
+  animation-duration: 0.60s;
+}
+
+.sticky-card{
+ position: sticky;
+ top: 70px ;
+  overflow: hidden;
+  z-index: 998;
+}
+
+@keyframes off{
+  from{
+  transform: scale(2,2);
+  border-radius: 20%;
+  margin-top: 30%;
+  }
+  to{
+    border-radius: 90%;
+  }
+}
+
+@keyframes aboutmeimg {
+  from{
+    border-radius: 90%;
+  }
+  to {transform: scale(2,2);
+  border-radius: 20%;
+  margin-top: 30%;
+  }
+}
+
+.education{
+  /* Pemberian area grid, class education akan mengambil area grid bernama edu */
+  /* Div ini akan menggunakan row 4 kolom 2, dan 3 */
+  grid-area: edu;
+  width: 100%;
+  justify-items: center;
+}
+
+.bachelor, .highschool{
+  width: 100%;
+  background-color:  #D7D3A4;
+  border-radius: 10px;
+  padding: 2%;
+  margin-bottom: 10px;
+}
+
+.education h3{
+  width: 100%;
+  position: relative;
+}
+
+.present{
+  position: absolute;
+  right: 0;
+  color: blue;
+}
+
+.certificate{
+  /* Pemberian area grid, class certificate akan mengambil area grid bernama cer */
+  /* Div ini akan menggunakan row 5 kolom 2, dan 3 */
+  grid-area: cer;
+  width: 100%;
+  /* Implementasi Penggunaan Grid */
+  display: grid;
+  /* Grid dibuat menjadi 3 kolom dengan lebar masing - masing kolom adalah 30% dari lebar parent (lebar div certificate) */
+  grid-template-columns: 30% 30% 30%;
+  justify-items: center;
+  justify-content: center;
+  /* Memberikan Gap sebesar 10px sehingga ada jarak antara tiap grid */
+  gap: 10px;
+}
+
+.card{
+  background-color: #D7D3A4;
+  border-radius: 20px;
+}
+
+.card img{
+  transition: transform 0.3s ease;
+  border-radius: 30px;
+  width: 100%;
+  padding: 5px;
+}
+
+.card p, .card h3{
+  padding-left: 5px;
+}
+
+.card p{
+  padding-bottom: 15px;
+}
+
+/* Implementasi penggunaan media dan breakpoint */
+/* Media dibawah akan digunakan jika breakpoint (lebar screen) kurang dari 600px */
+@media only screen and (max-width:600px) {
+  .card.one{grid-area: 2 / span 3;} /* Mengubah area grid div class card one menjadi memenuhi seluruh kolom (3 kolom) baris 2*/
+  .card.two{grid-area: 3 / span 3;} /* Mengubah area grid div class card two menjadi memenuhi seluruh kolom (3 kolom) baris 3*/
+  .card.three{grid-area: 4 / span 3;} /* Mengubah area grid div class card three menjadi memenuhi seluruh kolom (3 kolom) baris 4*/
+  .card.four{grid-area: 5 / span 3;} /* Mengubah area grid div class card four menjadi memenuhi seluruh kolom (3 kolom) baris 5*/
+  .card.five{grid-area: 6 / span 3;} /* Mengubah area grid div class card five menjadi memenuhi seluruh kolom (3 kolom) baris 6*/
+  .container{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    /* Mengubah area grid tiap child div didalam container ,masing - masing akan memenuhi 1 baris (3 kolom dalam 1 baris) */
+     grid-template-areas:
+    'header header header' 
+    'nav nav nav'
+    'main main main'
+    'edu edu edu'
+    'cer cer cer'
+    'proj proj proj'
+    'tools tools tools'
+    'contact contact contact';
+  }
+  .aboutme, .education, .certificate, .project{
+    border: none;
+    border-bottom: 1px dotted black;
+  }
+
+  .project .satu, .aboutme{
+    width: 95%;
+  }
+
+  .aboutme img, .aboutme img:hover{
+  animation-name: none;
+  }
+  .lime{
+  visibility: visible;
+}
+
+.aboutme {z-index: 900;}
+}
+
+/* Implementasi penggunaan media dan breakpoint */
+/* Media dibawah akan digunakan jika breakpoint (lebar screen) kurang dari 480px */
+@media only screen and (max-width:480px) {
+  .present{
+    visibility: hidden;
+  }
+}
+
+/* Implementasi penggunaan media dan breakpoint */
+/* Media dibawah akan digunakan jika breakpoint (lebar screen) lebih dari 601px */
+@media only screen and (min-width: 601px) {
+  /* Mengubah area grid div class card four menjadi memenuhi kolom 1 dan 2 pada baris 3 dan memberikan lebar 50%*/
+  .card.four {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    width: 50% !important;
+  }
+
+  .aboutme{
+    margin-right: 5px;
+  }
+
+  /* Mengubah area grid div class card five menjadi memenuhi kolom 2 dan 3 pada baris 3 dan memberikan lebar 50%*/
+  .card.five {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    width: 50% !important;
+  }
+} 
+
+
+.certificate h2{
+  /* Pemberian area grid, h2 yang ada didalam div certificate */
+  /* h2 ini akan menggunakan row 1 kolom 1, 2 dan 3 */
+  grid-area: 1 / span 3;
+}
+.intro{
+  /* Pemberian area grid, class intro akan mengambil area grid bernama header */
+  /* Div ini akan menggunakan row 1 kolom 1, 2 dan 3 */
+  grid-area: header;
+  width: 100%;
+  position: relative;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+    text-align: center;
+  }
+  10%{
+    transform: translateY(-10px);
+    text-align: center;
+  }
+  20% {
+    transform: translateY(40px);
+    text-align: left;
+  }
+  30%{
+    transform: translateY(-10px);
+    text-align: left;
+  }
+  40% {
+    transform: translateY(0);
+    text-align: right;
+  }
+  50%{
+    transform: translateY(-10px);
+    text-align: right;
+  }
+  60% {
+    transform: translateY(0);
+    text-align: center;
+  }
+  70%{
+    transform: translateY(-10px);
+    text-align: center;
+  }
+  80% {
+    transform: translateY(0);
+    text-align: center;
+  }
+  90%{
+    transform: translateY(50px);
+    text-align: center;
+  }
+  
+}
+
+.intro p {
+  margin: 0;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  align-self: flex-start; 
+  position: relative;
+  top: 0;
+}
+
+.diff{
+  border: 1px solid black;
+  margin-top: 300px;
+
+}
+
+.project{
+  /* Pemberian area grid, class project akan mengambil area grid bernama proj */
+  /* Div ini akan menggunakan row 5 kolom 2 dan 3 */
+  grid-area: proj;
+  width: 100%;
+  justify-items: center;
+}
+
+.satu{
+  text-align: center;
+  width: 50%;
+  background-color:  #D7D3A4;
+  transition: transform 0.3s ease;
+}
+
+.satu, .satu img{
+  border-radius: 30px;
+}
+
+.satu img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 15px;
+}
+
+.projdesc{
+  width: 100%;
+}
+
+.projdesc p{
+  margin: 5px 30px 20px 30px;
+  text-align: left;
+}
+
+.tools{
+  /* Pemberian area grid, class tools akan mengambil area grid bernama tools */
+  /* Div ini akan menggunakan row 6 kolom 1, 2 dan 3 */
+  grid-area: tools;
+}
+
+.tools, .tools-container, .contact{
+  width: 100%;
+}
+
+.tools-container{
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #D7D3A4;
+  border-radius: 10px;
+}
+.tools-container img{
+  margin:5px 0 -5px 0;
+  right: 0;
+}
+
+.contact{
+  /* Pemberian area grid, class contact akan mengambil area grid bernama contact */
+  /* Div ini akan menggunakan row 7 kolom 1, 2 dan 3 */
+  grid-area: contact;
+}
+
+a:hover{
+  background-color: #F3F0D0;
+}
+
+a:hover, .card img:hover, .satu img:hover{
+  transform: scale(1.05);
+}
