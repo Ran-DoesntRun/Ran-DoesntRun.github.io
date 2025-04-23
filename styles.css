@@ -223,11 +223,6 @@ border-radius: 10px;
 /* Implementasi penggunaan media dan breakpoint */
 /* Media dibawah akan digunakan jika breakpoint (lebar screen) kurang dari 600px */
 @media only screen and (max-width:600px) {
-  .card.one{grid-area: 2 / span 3;} /* Mengubah area grid div class card one menjadi memenuhi seluruh kolom (3 kolom) baris 2*/
-  .card.two{grid-area: 3 / span 3;} /* Mengubah area grid div class card two menjadi memenuhi seluruh kolom (3 kolom) baris 3*/
-  .card.three{grid-area: 4 / span 3;} /* Mengubah area grid div class card three menjadi memenuhi seluruh kolom (3 kolom) baris 4*/
-  .card.four{grid-area: 5 / span 3;} /* Mengubah area grid div class card four menjadi memenuhi seluruh kolom (3 kolom) baris 5*/
-  .card.five{grid-area: 6 / span 3;} /* Mengubah area grid div class card five menjadi memenuhi seluruh kolom (3 kolom) baris 6*/
   .container{
     width: 100%;
     margin: 0;
@@ -272,7 +267,7 @@ border-radius: 10px;
 
 /* Implementasi penggunaan media dan breakpoint */
 /* Media dibawah akan digunakan jika breakpoint (lebar screen) lebih dari 601px */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1049px) {
   /* Mengubah area grid div class card four menjadi memenuhi kolom 1 dan 2 pada baris 3 dan memberikan lebar 50%*/
   .card.four {
     grid-column: 1 / span 2;
@@ -292,7 +287,28 @@ border-radius: 10px;
   }
 } 
 
+/* Implementasi penggunaan media dan breakpoint */
+/* Media dibawah akan digunakan jika breakpoint (lebar screen) kurang dari 1048px */
+@media only screen and (max-width:1048px){
+  .card.one{grid-area: 2 / span 3;} /* Mengubah area grid div class card one menjadi memenuhi seluruh kolom (3 kolom) baris 2*/
+  .card.two{grid-area: 3 / span 3;} /* Mengubah area grid div class card two menjadi memenuhi seluruh kolom (3 kolom) baris 3*/
+  .card.three{grid-area: 4 / span 3;} /* Mengubah area grid div class card three menjadi memenuhi seluruh kolom (3 kolom) baris 4*/
+  .card.four{grid-area: 5 / span 3;} /* Mengubah area grid div class card four menjadi memenuhi seluruh kolom (3 kolom) baris 5*/
+  .card.five{grid-area: 6 / span 3;} /* Mengubah area grid div class card five menjadi memenuhi seluruh kolom (3 kolom) baris 6*/
+  
+  .card{
+    width: 100% !important;
+  }
 
+  .satu{
+    width: 100% !important;
+    margin-left: 5px;
+  }
+
+  .projdesc{
+    margin-top: 0;
+  }
+}
 .certificate h2{
   /* Pemberian area grid, h2 yang ada didalam div certificate */
   /* h2 ini akan menggunakan row 1 kolom 1, 2 dan 3 */
@@ -433,7 +449,11 @@ border-radius: 10px;
 a:hover{
   background-color: #F3F0D0;
 }
-
-a:hover, .card img:hover, .satu img:hover{
+.card img:hover{
+  transform: scale(1.3);
+  border-radius: 0;
+  z-index: 1001;
+}
+a:hover, .satu img:hover{
   transform: scale(1.05);
 }
