@@ -104,7 +104,7 @@ border-radius: 10px;
   text-align: center;
   margin-top: 5px;
   border-right: 1px dotted black;
-  z-index: 1000;
+  z-index: 950;
   background-color: #D7D3A4;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -118,16 +118,14 @@ border-radius: 10px;
 
 .aboutme img{
   border-radius: 90%;
-  animation-name:off;
-  animation-fill-mode:forwards;
-  animation-duration:1s;
   size: 100%; /* Penggunaan Unit % untuk membuat responive Image */
+  transition: transform 0.3s ease;
 }
 
 .aboutme img:hover{
-  animation-name: aboutmeimg;
-  animation-fill-mode: both;
-  animation-duration: 0.60s;
+  transform: scale(2);
+  border-radius: 10px;
+  z-index: 1001;
 }
 
 .sticky-card{
@@ -135,27 +133,6 @@ border-radius: 10px;
  top: 70px ;
   overflow: hidden;
   z-index: 998;
-}
-
-@keyframes off{
-  from{
-  transform: scale(2,2);
-  border-radius: 20%;
-  margin-top: 30%;
-  }
-  to{
-    border-radius: 90%;
-  }
-}
-
-@keyframes aboutmeimg {
-  from{
-    border-radius: 90%;
-  }
-  to {transform: scale(2,2);
-  border-radius: 20%;
-  margin-top: 30%;
-  }
 }
 
 .education{
