@@ -243,7 +243,7 @@ border-radius: 10px;
 }
 
 /* Implementasi penggunaan media dan breakpoint */
-/* Media dibawah akan digunakan jika breakpoint (lebar screen) lebih dari 1049px */
+/* Media dibawah akan digunakan jika breakpoint (lebar screen) lebih dari 601px */
 @media only screen and (min-width: 1049px) {
   /* Mengubah area grid div class card four menjadi memenuhi kolom 1 dan 2 pada baris 3 dan memberikan lebar 50%*/
   .card.four {
