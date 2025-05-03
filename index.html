@@ -7,202 +7,260 @@
   <title>PORTOFOLIO EVAN</title>
   <!-- Implementasi Penggunaan Meta Viewport-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
   <!-- Implementasi Typography, Menggunakan jenis font lain -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
 </head>
 
 <body>
   <div class="container">
-    <div class="intro">
-      <p>Hello There, I'm <span>Evan Febrian!</span> <span>A Web Developer</span></p>
+    <div class=" text-center row h-100">
+      <p>Hello There, I'm Evan Febrian! A Web Developer</p>
     </div>
-    <nav>
-      <ul>
-        <a href="#aboutme" class="lime">
-          <li>About Me</li>
-        </a>
-        <a href="#education">
-          <li class="lidua">Education</li>
-        </a>
-        <a href="#certificate">
-          <li>Certificate</li>
-        </a>
-        <a href="#project">
-          <li>Project</li>
-        </a>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" aria-current="page" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Main</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#aboutme">About Me</a></li>
+                <li><a class="dropdown-item" href="#education">Education</a></li>
+                <li><a class="dropdown-item" href="#certificate">Certificate</a></li>
+                <li><a class="dropdown-item" href="#project">Project</a></li>
 
-    <div class="aboutme" id="aboutme">
-      <div class="sticky-card">
-        <h2>ABOUT ME</h2>
-        <img src="./images/profile.jpg" alt="Foto Profil Evan">
-        <p>
-          My name is Evan Febrian, I'm a 3rd years college student at Teknologi Digital Indonesia University majoring in
-          Informatics. I've been curious and pursuing the path of Web Developer, especially BackEnd Developer.
-        </p>
-        <p>
-          If you have any job offer you can contact me via my email <span
-            class="email"><i>evanpersia0224@gmail.com</i></span> or
-          through one of my <a href="#sosmed" style="color:rgb(255, 72, 0)">social media</a>
-        </p>
-      </div>
-    </div>
-    <div class="education" id="education">
-      <h2>EDUCATION</h2>
-      <div class="bachelor">
-        <h3>Universitas Teknologi Digital Indonesia <span class="present">Present</span></h3>
-        <h4>Information Technology</h4>
-        <h4>Informatics</h4>
-        <p>Current GPA : 3.84</p>
-        <p>September 2022 - Present</p>
-      </div>
-      <div class="highschool">
-        <h3>SMA Negeri 2 Waingapu</h3>
-        <h4>Natural Science</h4>
-        <p>June 2019 - Mei 2022</p>
-      </div>
-    </div>
-    <div class="certificate" id="certificate">
-      <h2>CERTIFICATE</h2>
-      <div class="card one">
-        <img src="./images/1.png" class="cer1">
-        <h3>Dicoding</h3>
-        <p>BackEnd Pemula Dengan JavaScript</p>
-      </div>
-      <div class="card two">
-        <img src="./images/2.png" class="cer2">
-        <h3>Dicoding</h3>
-        <p>Dasar Pemrograman JavaScript</p>
-      </div>
-      <div class="card three">
-        <img src="./images/3.png" class="cer3">
-        <h3>Dicoding</h3>
-        <p>Cloud Practitioner Essentials</p>
-      </div>
-      <div class="card four">
-        <img src="./images/4.png" class="cer4">
-        <h3>Dicoding</h3>
-        <p>Dasar Visualisasi Data</p>
-      </div>
-      <div class="card five">
-        <img src="./images/5.png" class="cer5">
-        <h3>Dicoding</h3>
-        <p>Dasar Manajemen Proyek</p>
-      </div>
-    </div>
-    <div class="project" id="project">
-      <h2>PROJECT</h2>
-      <div class="satu">
-        <a href="https://pwa-library-of-books.vercel.app/">
-          <img src="./images/libraryofbooks.png" alt="Library Of Books">
-        </a>
-        <div class="projdesc">
-          <h4>Library Of Books <span style="color: red;">[Unfinished]</span></h4>
-          <p>This is a <b>Progressive Web Apps</b> that allow users to search book by the title using the <a
-              href="https://openlibrary.org/developers/api">Open Library api</a> <br />
-            This website made to fullfil college class assignment <br />
-            Made with HTML, Bootstrap, And JQuery</p>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="tools" id="tools">
-      <h2>TOOLS</h2>
-      <div class="tools-container">
-        <a href="https://www.java.com/en/">
-          <!-- Implementasi picture (responsive image) dan Theming
+    </nav>
+
+    <div class="container-fluid row">
+      <div class="container-fluid col-12 col-lg-3 " id="aboutme">
+        <div class="sticky-lg-top" style="top:100px; z-index:1019;">
+          <h2>ABOUT ME</h2>
+          <img src="./images/profile.jpg" alt="Foto Profil Evan">
+          <p>
+            My name is Evan Febrian, I'm a 3rd years college student at Teknologi Digital Indonesia University majoring
+            in
+            Informatics. I've been curious and pursuing the path of Web Developer, especially BackEnd Developer.
+          </p>
+          <p>
+            If you have any job offer you can contact me via my email <span
+              class="email"><i>evanpersia0224@gmail.com</i></span> or
+            through one of my <a href="#sosmed" style="color:rgb(255, 72, 0)">social media</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 ">
+        <div class="" id="education">
+          <h2 class="text-center">EDUCATION</h2>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Universitas Teknologi Digital Indonesia <span class="present">Present</span></h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Information Technology</h6>
+              <p class="card-text">Informatics</p>
+              <p class="card-text">Current GPA : 3.84</p>
+              <p class="card-text">September 2022 - Present</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">SMA Negeri 2 Waingapu</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Natural Science</h6>
+              <p class="card-text">June 2019 - Mei 2022</p>
+            </div>
+          </div>
+          <div class="highschool">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="card-deck" id="certificate">
+          <h2 class="col-12 text-center">CERTIFICATE</h2>
+          <div class="row">
+            <div class="card col-12 col-md-6">
+              <img src="./images/1.png" class="card-img-top img-fluid"
+                alt="Certificate BackEnd Pemula Dengan JavaScript by Dicoding">
+              <div class="card-body">
+                <h3 class="card-text">Dicoding</h3>
+                <p class="card-text">BackEnd Pemula Dengan JavaScript</p>
+              </div>
+            </div>
+            <div class="card col-12 col-md-6">
+              <img src="./images/2.png" class="card-img-top img-fluid"
+                alt="Certificate Dasar Pemrograman JavaScript by Dicoding">
+              <div class="card-body">
+                <h3 class="card-text">Dicoding</h3>
+                <p class="card-text">Dasar Pemrograman JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card col-12 col-md-6">
+              <img src="./images/3.png" class="card-img-top img-fluid"
+                alt="Certificate Cloud Practitioner Essentials by Dicoding">
+              <div class="card-body">
+                <h3 class="card-text">Dicoding</h3>
+                <p class="card-text">Cloud Practitioner Essentials</p>
+              </div>
+            </div>
+            <div class="card col-12 col-md-6">
+              <img src="./images/4.png" class="card-img-top img-fluid"
+                alt="Certificate Dasar Visualisasi Data by Dicoding">
+              <div class="card-body">
+                <h3 class="card-text">Dicoding</h3>
+                <p class="card-text">Dasar Visualisasi Data</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card col-12 col-md-6 mx-auto">
+              <img src="./images/5.png" class="card-img-top img-fluid"
+                alt="Certificate Dasar Manajemen Proyek by Dicoding">
+              <div class="card-body">
+                <h3 class="card-text">Dicoding</h3>
+                <p class="card-text">Dasar Manajemen Proyek</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="" id="project">
+          <h2>PROJECT</h2>
+          <div class="card">
+            <img src="./images/libraryofbooks.png" class="card-img img-fluid" alt="Library Of Books">
+            <div class="card-body">
+              <h5 class="card-title">Library Of Books <span style="color: red;">[Unfinished]</span></h5>
+              <p class="card-text">This is a <b>Progressive Web Apps</b> that allow users to search book by the title
+                using the <a href="https://openlibrary.org/developers/api">Open Library api</a> <br />
+                This website made to fullfil college class assignment <br />
+                Made with HTML, Bootstrap, And JQuery</p>
+              <a href="https://pwa-library-of-books.vercel.app/" class="btn btn-primary">Visit Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" id="tools">
+        <h2>TOOLS</h2>
+        <div class="tools-container">
+          <a href="https://www.java.com/en/">
+            <!-- Implementasi picture (responsive image) dan Theming
            Menampilkan image yang berbeda ketika screen kurang dari 600px 
            Pada screen yang lebih kecil dari 600px, image yang dipakai adalah yang berukuran kecil-->
-          <picture>
-            <source srcset="./images/java-black-small.png" media="(max-width: 600px)">
-            <source srcset="./images/java-black-main.png">
-            <img src="./images/java-black-main.png" alt="Java">
-          </picture>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">
-          <picture>
-            <source srcset="./images/html-small.png" media="(max-width: 600px)">
-            <source srcset="./images/html.png">
-            <img src="./images/html.png" alt="HTML">
-          </picture>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-          <picture>
-            <source srcset="./images/css-3-small.png" media="(max-width: 600px)">
-            <source srcset="./images/css-3.png">
-            <img src="./images/css-3.png" alt="CSS">
-          </picture>
-        </a>
-        <a href="https://www.php.net/">
-          <picture>
-            <source srcset="./images/php-small.png" media="(max-width: 600px)">
-            <source srcset="./images/php.png">
-            <img src="./images/php.png" alt="PHP">
-          </picture>
-        </a>
-        <a href="https://getbootstrap.com/">
-          <picture>
-            <source srcset="./images/bootstrap-small.png" media="(max-width: 600px)">
-            <source srcset="./images/bootstrap.png">
-            <img src="./images/bootstrap.png" alt="BootStrap">
-          </picture>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-          <picture>
-            <source srcset="./images/java-script-small.png" media="(max-width: 600px)">
-            <source srcset="./images/java-script.png">
-            <img src="./images/java-script.png" alt="JavaScript">
-          </picture>
-        </a>
-        <a href="https://jquery.com/">
-          <picture>
-            <source srcset="./images/jquery-small.png" media="(max-width: 600px)">
-            <source srcset="./images/jquery.png">
-            <img src="./images/jquery.png" alt="JQuery">
-          </picture>
-        </a>
+            <picture>
+              <source srcset="./images/java-black-small.png" media="(max-width: 600px)">
+              <source srcset="./images/java-black-main.png">
+              <img src="./images/java-black-main.png" alt="Java">
+            </picture>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">
+            <picture>
+              <source srcset="./images/html-small.png" media="(max-width: 600px)">
+              <source srcset="./images/html.png">
+              <img src="./images/html.png" alt="HTML">
+            </picture>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+            <picture>
+              <source srcset="./images/css-3-small.png" media="(max-width: 600px)">
+              <source srcset="./images/css-3.png">
+              <img src="./images/css-3.png" alt="CSS">
+            </picture>
+          </a>
+          <a href="https://www.php.net/">
+            <picture>
+              <source srcset="./images/php-small.png" media="(max-width: 600px)">
+              <source srcset="./images/php.png">
+              <img src="./images/php.png" alt="PHP">
+            </picture>
+          </a>
+          <a href="https://getbootstrap.com/">
+            <picture>
+              <source srcset="./images/bootstrap-small.png" media="(max-width: 600px)">
+              <source srcset="./images/bootstrap.png">
+              <img src="./images/bootstrap.png" alt="BootStrap">
+            </picture>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            <picture>
+              <source srcset="./images/java-script-small.png" media="(max-width: 600px)">
+              <source srcset="./images/java-script.png">
+              <img src="./images/java-script.png" alt="JavaScript">
+            </picture>
+          </a>
+          <a href="https://jquery.com/">
+            <picture>
+              <source srcset="./images/jquery-small.png" media="(max-width: 600px)">
+              <source srcset="./images/jquery.png">
+              <img src="./images/jquery.png" alt="JQuery">
+            </picture>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="contact" id="sosmed">
-      <h2>FOLLOW ME</h2>
-      <div class="tools-container">
-        <a href="https://www.instagram.com/2nave_4evan/">
-          <picture>
-            <source srcset="./images/instagram-small.png" media="(max-width: 600px)">
-            <source srcset="./images/instagram.png">
-            <img src="./images/instagram.png" alt="Instagram">
-          </picture>
-        </a>
-        <a href="https://web.facebook.com/evan.febrian.5055">
-          <picture>
-            <source srcset="./images/facebook-small.png" media="(max-width: 600px)">
-            <source srcset="./images/facebook.png">
-            <img src="./images/facebook.png" alt="Facebook">
-          </picture>
-        </a>
-        <a href="https://www.linkedin.com/in/evan-febrian-02a103248/">
-          <picture>
-            <source srcset="./images/linkedin-small.png" media="(max-width: 600px)">
-            <source srcset="./images/linkedin.png">
-            <img src="./images/linkedin.png" alt="Github">
-          </picture>
-        </a>
-        <a href="https://github.com/Ran-DoesntRun">
-          <picture>
-            <source srcset="./images/github-small.png" media="(max-width: 600px)">
-            <source srcset="./images/github.png">
-            <img src="./images/github.png" alt="Github">
-          </picture>
-        </a>
+      <div class="contact" id="sosmed">
+        <h2>FOLLOW ME</h2>
+        <div class="tools-container">
+          <a href="https://www.instagram.com/2nave_4evan/">
+            <picture>
+              <source srcset="./images/instagram-small.png" media="(max-width: 600px)">
+              <source srcset="./images/instagram.png">
+              <img src="./images/instagram.png" alt="Instagram">
+            </picture>
+          </a>
+          <a href="https://web.facebook.com/evan.febrian.5055">
+            <picture>
+              <source srcset="./images/facebook-small.png" media="(max-width: 600px)">
+              <source srcset="./images/facebook.png">
+              <img src="./images/facebook.png" alt="Facebook">
+            </picture>
+          </a>
+          <a href="https://www.linkedin.com/in/evan-febrian-02a103248/">
+            <picture>
+              <source srcset="./images/linkedin-small.png" media="(max-width: 600px)">
+              <source srcset="./images/linkedin.png">
+              <img src="./images/linkedin.png" alt="Github">
+            </picture>
+          </a>
+          <a href="https://github.com/Ran-DoesntRun">
+            <picture>
+              <source srcset="./images/github-small.png" media="(max-width: 600px)">
+              <source srcset="./images/github.png">
+              <img src="./images/github.png" alt="Github">
+            </picture>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="experience">
+      <!-- <div class="experience">
 
+    </div> -->
     </div>
   </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
