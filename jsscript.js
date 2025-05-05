@@ -1,9 +1,14 @@
+// Mengambil url dari location
 const firstTime = window.location.search;
+// mengubah url menjadi object
 const paramUrl = new URLSearchParams(firstTime);
 
+// melakukan seleksi dimana jika url memiliki parameter dengan nama first maka statement dijalankan
 if(paramUrl.has("first") === true){
+  // mengambil elemen dengan nama id modalawal dan memberikan html baru kedalam div tersebut
   document.getElementById("modalawal").innerHTML = 
-`
+// Membuat modal menggunakan bootstrap
+  `
 <div class='modal' id="modal" tabindex='-1'>
     <div class='modal-dialog'>
       <div class='modal-content'>
@@ -26,11 +31,13 @@ if(paramUrl.has("first") === true){
     </div>
   </div>`;
 
+  // dibawah ini merupakan syntax untuk mentriger agar modal berkerja/muncul
   var myModal = new bootstrap.Modal(document.getElementById("modal"));
   myModal.show();
 }
 
-function searching() {
+// melakukan seleksi dimana jika url memiliki parameter dengan nama search maka statement dijalankan
+if(paramUrl.has("search") === true){
 document.getElementById("modalawal").innerHTML = 
 `
 <div class='modal' id="modal" tabindex='-1'>
