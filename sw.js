@@ -36,7 +36,8 @@ const CACHE_ASSETS = [
   "./books/Horror1.jpg",
   "./books/Horror1s.jpg",
   "./books/Rom1.jpg",
-  "./books/Rom1s.jpg"
+  "./books/Rom1s.jpg",
+  "./libraryofbooks.html?first=yes"
 ];
 
 // Menginstall service worker yang akan dijalankan
