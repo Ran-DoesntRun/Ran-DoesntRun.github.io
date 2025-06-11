@@ -30,7 +30,6 @@ const CACHE_ASSETS = [
   "./images/profile.jpg",
   "./index.html",
   "./jsscript.js",
-  "./manifest.json",
   "./sw.js",
   "./libraryofbooks.html",
   "./books/Fan1.jpg",
