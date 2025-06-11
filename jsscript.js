@@ -1,6 +1,3 @@
-
-
-
 // Mengambil url dari location
 const firstTime = window.location.search;
 // mengubah url menjadi object
