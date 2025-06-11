@@ -37,7 +37,8 @@ const CACHE_ASSETS = [
   "/books/Horror1s.jpg",
   "/books/Rom1.jpg",
   "/books/Rom1s.jpg",
-  "/libraryofbooks.html?first=yes"
+  "/libraryofbooks.html?first=yes",
+  "/libraryofbooks.html?search=yes"
 ];
 
 
