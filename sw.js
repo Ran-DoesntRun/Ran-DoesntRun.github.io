@@ -5,7 +5,6 @@ const CACHE_ASSETS = [
   "/",
   "./bootstrap/bootstrap.bundle.min.js",
   "./bootstrap/bootstrap.min.css",
-  "./images/",
   "./images/1.png",
   "./images/2.png",
   "./images/3.png",
