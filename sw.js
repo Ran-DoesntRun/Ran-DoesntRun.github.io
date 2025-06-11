@@ -64,7 +64,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim(); //Membuat service worker yang telah aktif menjadi controller
 });
 
-//Mengambil data dari cache 
+//Mengambil data dari cache
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.open(CACHE_NAME).then((cache) => {
