@@ -23,7 +23,6 @@ const CACHE_ASSETS = [
   "./images/java-script-small.png",
   "./images/jquery-small.png",
   "./images/libraryofbooks.png",
-  "./libraryofbooks.html?first=yes",
   "./images/linkedin-small.png",
   "./images/php-small.png",
   "./images/profile.jpg",
