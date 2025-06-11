@@ -2,7 +2,7 @@
   "short_name": "Portofolio",
   "name": "Portofolio Evan Febrian",
   "icons": [{
-    "src": "./images/icon.png",
+    "src": "/images/icon.png",
     "sizes": "192x192",
     "type": "image/png"
   },
