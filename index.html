@@ -17,22 +17,16 @@
 
 <body>
   <!-- Membuat sebuah container responsive yang akan mengambil width berbeda pada tiap ukuran device -->
-  <div class="container">
-    <!-- Membuat div dengan class text-center yang berarti text dalam div ini akan berada pada center/tengah div
-     class row adalah class yang mendefinisikan bahwa div ini merupakan 1 row grid
-     class h-100 berarti height/tinggi div ini akan selalu 100% -->
-    <div class=" text-center row h-100">
-      <p>Hello There, I'm Evan Febrian! A Web Developer</p>
-    </div>
+  <div class="container-md shadow p-3 mb-5 bg-body-tertiary rounded mt-md-5">
     <!-- Membuat navbar sebagai navigasi pada web
      class navbar akan mendefinisikan semua variabel yang diperlukan untuk membentuk navigasi bar
      class navbar-expand-lg akan membuat semua opsi atau pilihan(list) dalam navbar akan terbuka diperlihatkan tanpa harus menggunakan hamburger ketika ukuran layar lebih dari 992px
      class bg-body-tertiary adalah untuk menetapkan warna background menjadi warna pada variable tertiary 
      class sticky-top untuk membuat navbar tetap berada diatas layar ketika discroll kebawah-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top rounded">
       <!-- Membuat div dengan class container-fluid yang berarti width dari div ini akan selalu 100% pada ukuran layar manapun -->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Portofolio Evan</a>
+      <div class="container-fluid  rounded">
+        <a class="navbar-brand" href="#">Evan's Portofolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <!-- Membuat icon hamburger untuk navbar sehingga pada ukuran layar tertentu akan muncul hamburger -->
@@ -68,22 +62,26 @@
 
     <!-- Membuat div dengan class container-fluid yang berarti width dari div ini akan selalu 100% pada ukuran layar manapun -->
     <div class="container-fluid row">
-      <!-- Class p-5 berarti akan terdapat padding sebesar 3rem
+      <!-- Class p-2 berarti akan terdapat padding sebesar 3rem
        col-12 berarti div ini akan mengambil 12 kolom pada grid
        col-lg-3 berarti div ini akan mengambil 3 kolom jika ukuran layar lebih dari 992px -->
-      <div class="p-5 container-fluid col-12 col-lg-3 " id="aboutme">
+      <div class="p-2 container-fluid col-12 col-lg-3 " id="aboutme">
         <!-- class sticky-top untuk membuat navbar tetap berada diatas layar ketika discroll kebawah 
          style z-index:1019 digunakan sehingga div ini tidak akan menutupi navbar yang karena navbar sticky
          top:100px adalah untuk membuat div ini tetap berada 100px dibawah layar teratas -->
         <div class="sticky-lg-top" style="top:100px; z-index:1019;">
           <h2 class="text-center">ABOUT ME</h2>
           <img src="./images/profile.jpg" alt="Foto Profil Evan" class="img-fluid rounded mx-auto d-block">
-          <p>
+          <div class="btn-group w-100 mt-1">
+            <a href="https://drive.google.com/drive/folders/1kSjrdXGDyoZl0EhV4WHt-dck8ozyg-mB?usp=sharing"
+              class="text-decoration-none btn btn-primary">CV</a>
+          </div>
+          <p class="text-center">
             My name is Evan Febrian, I'm a 3rd years college student at Teknologi Digital Indonesia University majoring
             in
             Informatics. I've been curious and pursuing the path of Web Developer, especially BackEnd Developer.
           </p>
-          <p>
+          <p class="text-center">
             If you have any job offer you can contact me via my email <span
               class="text-primary"><i>evanpersia0224@gmail.com</i></span> or
             through one of my <a href="#sosmed" style="color:rgb(255, 72, 0)">social media</a>
@@ -93,8 +91,8 @@
       <!-- Div ini akan mengambil 9 kolom grid pada ukuran layar lebih dari 992px 
        tetapi jika kurang dari ukuran layar maka class ini akan menggunakan 12 kolom grid -->
       <div class="col-12 col-lg-9 ">
-        <!-- class p-5 adalah untuk membuat padding sebesar 3rem -->
-        <div class="p-5" id="education">
+        <!-- class p-2 adalah untuk membuat padding sebesar 3rem -->
+        <div class="p-2" id="education">
           <h2 class="text-center">EDUCATION</h2>
           <!-- Dibawah ini adalah div untuk membuat card / kartu dengan menggunakan bootstrap 
            class card adalah untuk mendefinisikan variabel yang digunakn untuk membuat card-->
@@ -125,7 +123,7 @@
             <p></p>
           </div>
         </div>
-        <div class="card-deck p-5" id="certificate">
+        <div class="card-deck p-2" id="certificate">
           <div class="row">
             <h2 class="col-12 text-center">CERTIFICATE</h2>
           </div>
@@ -176,7 +174,29 @@
             </div>
           </div>
         </div>
-        <div class="p-5" id="project">
+        <div class="p-2" id="experience">
+          <h2 class="text-center">EXPERIENCE</h2>
+          <!-- Dibawah ini adalah div untuk membuat card / kartu dengan menggunakan bootstrap 
+                   class card adalah untuk mendefinisikan variabel yang digunakn untuk membuat card-->
+          <div class="card">
+            <!-- Div untuk body / tubuh kartu yang berisi isi yang akan ditampilkan pada card -->
+            <div class="card-body">
+              <!-- card-title untuk membuat judul kartu dengan menentukan margin bottom dan warna text -->
+              <h5 class="card-title">Assistant Lecturer</h5>
+              <!-- card-subtitle untuk membuat sub judul kartu dengan menentukan margin top dan bottom dan warna text -->
+              <h6 class="card-subtitle mb-2 text-body-secondary">Teknologi Digital Indonesia University</h6>
+              <!-- class card-text untuk mengubah margin bottom menjadi 0 -->
+              <p class="card-text">Assist professors in managing web client programming classes.</p>
+              <p class="card-text">Help students apply theoretical knowledge through practical exercises in HTML,
+                CSS, and JavaScript.</p>
+              <p class="card-text">Assist students in troubleshooting code errors.</p>
+              <p class="card-text">March 2025 - Present</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="p-2" id="project">
           <h2 class="text-center">PROJECT</h2>
           <div class="card">
             <img src="./images/libraryofbooks.png" class="card-img img-fluid" alt="Library Of Books">
@@ -191,13 +211,13 @@
           </div>
         </div>
       </div>
-      <div class=" container p-5 text-center" id="tools">
+      <div class=" container-fluid p-2 text-center" id="tools">
         <h2>TOOLS</h2>
         <!-- class d-grip untuk mendefinisikan display menjadi grid,
          column-gap-2 untuk memberikan gap tiap column menjadi 0.5rem
          style grid-template-columns untuk membuat template/peletakan column
          repeat(7,  1fr) untuk membuat 7 column dengan lebar 1fr -->
-        <div style="grid-template-columns: repeat(7, 1fr);" class="container d-grid column-gap-2">
+        <div style="grid-template-columns: repeat(7, 1fr);" class="container-fluid d-grid column-gap-2">
           <a href="https://www.java.com/en/">
             <!-- Implementasi picture (responsive image) dan Theming
            Menampilkan image yang berbeda ketika screen kurang dari 600px 
@@ -252,7 +272,7 @@
           </a>
         </div>
       </div>
-      <div class="container p-5 text-center" id="sosmed">
+      <div class="container p-2 text-center" id="sosmed">
         <h2>FOLLOW ME</h2>
         <div class="container p-0 d-grid column-gap-4" style="grid-template-columns: repeat(4, 1fr);">
           <a href="https://www.instagram.com/2nave_4evan/">
